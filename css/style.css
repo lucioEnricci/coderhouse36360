@@ -233,6 +233,27 @@ nav .anchor:after {
     justify-content:center;
 }
 
+.titulo {
+    grid-area:titulo;
+    display:flex;
+    justify-content: center;
+    color:#a21f30;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+
+.container__home {
+    grid-area:header;
+    display:flex;
+    justify-content:end;
+    align-items:center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    letter-spacing: 10px;
+    padding:20px;
+}
+
 .contact {
     display:flex;
     flex-direction:column;
@@ -364,16 +385,74 @@ nav .anchor:after {
 /*LANGUAGES*/
 
 @media screen and (max-width: 480px) {
-    .languages {display:flex;
+    .languages {
+        display:flex;
         flex-direction:column;
-    background-color:black;
-    
+        justify-content:center;
+        background-color:black;
+    }
+    .main {
+        display:flex;
+        color:whitesmoke;
+        flex-direction:column;
+    }
+    .header {
+        height:auto;
+    }
 }
 
 /*CODERHOUSE*/
 
+@media screen and (max-width: 480px) {
+    .coderhouse {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        background-color:black;
+    }
+    
+}
+
 /*ABOUTME*/
+@media screen and (max-width: 480px) {
+    .aboutme {
+        display:flex;
+        flex-direction:column;
+        background-color:black;
+        height:auto;
+    }
+    .imagen__about {
+        display:none;
+    }
+}
 
 /*CONTACT*/
 
+@media screen and (max-width: 480px) {
+    
+    .container__contact {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        width:auto;
+        height:auto;
+    }
+    .imagen {
+        display:none;
+    }
+    .contenedor__contact {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+    .contact {
+        align-items:center;
+    }
+    .mapa {
+        align-items:center;
+        margin:auto;
+    }
+
+}
+    
 
