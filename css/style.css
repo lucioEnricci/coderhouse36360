@@ -1,37 +1,21 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-
-                        /*DISPLAY GRID HOME*/
-
+/*HOME*/
 .index {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:15% 80% 5%;
-    grid-template-areas: "header header"
-                         "nav imagen"
-                         "footer footer";
-    width:100vw;
-    height: 100vh;
     background-color:black;
+    color:whitesmoke;
+    height:100%;
+    width:100%;
 }
 
-                        /*HOME*/
 
-.index__header {
-    grid-area:header;
-    display:flex;
+.index__h1 {
     align-items:center;
     color:whitesmoke;
     font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
-    letter-spacing: 10px;
+    font-size: 3.1rem;
+    letter-spacing: 0.6rem;
 }
 
 .nav {
-    grid-area:nav;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -41,10 +25,10 @@
 .nav__list {
     list-style-type: none;
     font-family: 'Bebas Neue', cursive;
-    padding: 5px;
-    font-size: 70px;
+    padding: 0.3rem;
+    font-size: 5.6rem;
     font-weight: 900;
-    letter-spacing: 10px;
+    letter-spacing: 0.6rem;
 }
 
 .anchor {
@@ -81,378 +65,61 @@ nav .anchor:after {
     overflow:hidden;
 }
 
-                        /*DISPLAY GRID LANGUAGES*/
-
-.languages {
-    display:flex;
-    flex-direction:column;
-    background-color:black;
-}
-
-                        /*LANGUAGES*/
+/*LANGUAGES*/
 
 .nav__home {
-    display:flex;
-    justify-content:end;
     align-items:center;
     font-family: 'Bebas Neue', cursive;
-    font-size: 40px;
+    font-size: 2.5rem;
     letter-spacing: 10px;
     padding:20px;
-}
-
-.header {
-    display:flex;
-    flex-direction:column;
-    justify-content:space-around;
-    align-items:center;
     color:#a21f30;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 40px;
-    font-weight: 900;
-    letter-spacing: 10px;
-    height:80vh;
+    text-decoration: none;
 }
 
-.main {
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    color:whitesmoke;
-    justify-content: space-around;
+.nav__home:hover {
+    color:#C49609;
 }
 
-.main__contenedor {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    padding:10px;
-}
-
-.main__titulo {
+.header__title {
     color:#C49609;
     font-family: 'Bebas Neue', cursive;
-    font-size: 40px;
-    letter-spacing: 10px;
+    padding: 0.3rem;
+    font-size: 5.6rem;
+    font-weight: 900;
+    letter-spacing: 0.6rem;
 }
 
-.texto {
-    color: whitesmoke;
+.header__text {
     font-family: 'Kanit', sans-serif;
-    font-size: 25px;
+    font-size: 2rem;
     letter-spacing: 5px;
-    padding:20px;
-    text-align:center;
-}
-                        /*DISPLAY GRID CODERHOUSE*/
-
-.coderhouse {
-    display:flex;
-    flex-direction:column;
-    background-color:black;
 }
 
-/*CODERHOUSE*/
-
-.coderhouse__main {
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    justify-content: center;
-    align-items:center;
-}
-
-.coderhouse__link {
-    display:flex;
-    justify-content:center;
-}
-
-                        /*DISPLAY GRID ABOUT*/
-
-.aboutme {
-    display:grid;
-    grid-template-columns:50% 50%;
-    grid-template-rows:15% 10% 70% 5%;
-    grid-template-areas: "header header"
-                         "titulo titulo"
-                         "main imagen"
-                         "footer footer";
-    background-color:black;
-    width:100vw;
-    height: 100vh;
-}
-
-                        /*ABOUT ME*/
-
-.imagen__about {
-    grid-area:imagen;
-    display:flex;
-    justify-content:center;
-
-}
-
-.aboutme__home {
-    grid-area:header;
-    display:flex;
-    justify-content:end;
-    align-items:center;
+.carousel__h1 {
     font-family: 'Bebas Neue', cursive;
-    font-size: 40px;
-    letter-spacing: 10px;
-    padding:20px;
-}
-
-.aboutme__main {
-    grid-area:main;
-
-}
-
-                        /*DISPLAY GRID CONTACT*/
-
-.container__contact {
-    display:grid;
-    grid-template-columns:50% 50%;
-    grid-template-rows:15% 10% 70% 5%;
-    grid-template-areas: "header header"
-                         "titulo titulo"
-                         "contact contact"
-                         "footer footer";
-    background-color:black;
-    width:100vw;
-    height: 100vh;
-}
-                    
-                        /*CONTACT*/
-
-.contenedor__contact {
-    grid-area:contact;
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    color: whitesmoke;
-    font-family: 'Kanit', sans-serif;
-    font-size: 25px;
-    justify-content:center;
-}
-
-.titulo {
-    grid-area:titulo;
-    display:flex;
-    justify-content: center;
+    letter-spacing: 3px;
     color:#a21f30;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 40px;
-    letter-spacing: 10px;
 }
 
-.container__home {
-    grid-area:header;
-    display:flex;
-    justify-content:end;
-    align-items:center;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 40px;
-    letter-spacing: 10px;
-    padding:20px;
-}
 
-.contact {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:end;
-    width:100%;
-    padding:0px 30px;
-}
 
-.contact textarea {
-    overflow: scroll;
-    resize: none;
-    width: 100%
-}
 
-.contact input {
-    width:100%;
-}
-
-.contact__item--inline {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width:50%;
-}
-
-.contact__item {
-    width:50%;
-}
-
-.btn {
-    font-family: 'Kanit', sans-serif;
-    font-size: 20px;
-    padding: 0 10px;
-    border: 1px solid white;
-    z-index: 1;
-    width: 50%;
-}
-
-.btn:hover {
-    background-color:black;
-    color:whitesmoke;
-    border: 1px solid white;
-}
-
-.mapa {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:start;
-    color: whitesmoke;
-    font-family: 'Kanit', sans-serif;
-    font-size: 25px;
-    width:50%;
-    padding:30px;
-
-}
-
-                        /*FOOTER*/
-
-.footer {
-    grid-area:footer;
-    color:whitesmoke;
-}
-
+/*FOOTER*/
 .footer__list {
-    display:flex;
-    justify-content:center;
+   display:flex;
+   justify-content:center;
+   padding-top:15px;
 }
 
 .footer__link {
-    display:inline;
-    color: whitesmoke;
-    font-family: 'Kanit', sans-serif;
-    list-style-type: none;
-    padding: 0 15px;
+   display:inline;
+   font-family: 'Kanit', sans-serif;
+   list-style-type: none;
+   padding:  0px 15px;
 }
-
+                       
 .footer li a {
-    color:whitesmoke;
+   color:whitesmoke;
 }
-
-                        /*DEADPOOL SECRET*/
-
-.deadpool {
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:15% 85%;
-    grid-template-areas: "header"
-                         "video";
-    background-color:black;
-    width:100vw;
-    height: 100vh;
-}
-
-.deadpool .languages__header {
-    grid-area:header;
-}
-
-.deadpool__video {
-    display:flex;
-    grid-area:video;
-    justify-content:center;
-    align-items:center;
-} 
-
-
-                        /*MEDIAS QUERIES*/
-
-/*HOME*/
-
-@media screen and (max-width: 480px) {
-    .index {display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:15% 80% 5%;
-    grid-template-areas: "header"
-                         "nav"
-                         "footer";
-    background-color:black;
-    background-image:url(../imagenes/home.png);
-    background-position:center;
-    background-repeat: no-repeat;
-    
-}
-    .imagen a{
-        display:none;
-    }
-}
-/*LANGUAGES*/
-
-@media screen and (max-width: 480px) {
-    .languages {
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        background-color:black;
-    }
-    .main {
-        display:flex;
-        color:whitesmoke;
-        flex-direction:column;
-    }
-    .header {
-        height:auto;
-    }
-}
-
-/*CODERHOUSE*/
-
-@media screen and (max-width: 480px) {
-    .coderhouse {
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        background-color:black;
-    }
-    
-}
-
-/*ABOUTME*/
-@media screen and (max-width: 480px) {
-    .aboutme {
-        display:flex;
-        flex-direction:column;
-        background-color:black;
-        height:auto;
-    }
-    .imagen__about {
-        display:none;
-    }
-}
-
-/*CONTACT*/
-
-@media screen and (max-width: 480px) {
-    
-    .container__contact {
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        width:auto;
-        height:auto;
-    }
-    .imagen {
-        display:none;
-    }
-    .contenedor__contact {
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-    }
-    .contact {
-        align-items:center;
-    }
-    .mapa {
-        align-items:center;
-        margin:auto;
-    }
-
-}
-    
 
