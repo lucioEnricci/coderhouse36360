@@ -102,8 +102,11 @@ nav .anchor:after {
     color:#a21f30;
 }
 
-
-
+/*CODERHOUSE*/
+.card {
+    background-color: #000;
+    margin:auto;
+}
 
 /*FOOTER*/
 .footer__list {
