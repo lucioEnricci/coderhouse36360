@@ -108,6 +108,32 @@ nav .anchor:after {
     margin:auto;
 }
 
+/*ABOUTME*/
+.main__t {
+    display:flex;
+    flex-direction: column;
+}
+
+
+.main__contenedor {
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   align-items: center;
+}
+.main__titulo {
+    color:#C49609;
+}
+.main__texto {
+    padding:1rem;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 5px;
+}
+
+
+
+
 /*FOOTER*/
 .footer__list {
    display:flex;
