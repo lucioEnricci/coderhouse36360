@@ -14,33 +14,67 @@
     <link rel="icon" href="../imagenes/favicon-32x32.png">
 </head>
 <body>
-    <div class="languages" >
-        <nav class="nav__home">
-            <a class="anchor" href="../index.html"> HOME </a>
+    <div class="container-fluid index">
+        <nav class="row">
+            <div class="col-12 text-center text-md-end ">
+                <a class="nav__home" href="../index.html"> HOME </a>
+            </div>
         </nav>
         
-        <header class="header">
-            <h1>Languages</h1>
-            <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nobis odio facere corrupti ipsa, voluptatem illum id rerum incidunt autem earum labore! Quas rem dolor quos suscipit fuga voluptatibus enim recusandae neque aperiam, excepturi laborum voluptatem. Debitis dignissimos dolorum nihil? Perspiciatis nisi eius optio dolorum at, consequatur dignissimos cupiditate delectus!</p>
+        <header class="row px-4 py-5 my-5 text-center header">
+            <h1 class="col-12 text-center display-5 fw-bold header__title">Languages</h1>
+            <p class="text-center lead mb-4 header__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nobis odio facere corrupti ipsa, voluptatem illum id rerum incidunt autem earum labore! Quas rem dolor quos suscipit fuga voluptatibus enim recusandae neque aperiam, excepturi laborum voluptatem. Debitis dignissimos dolorum nihil? Perspiciatis nisi eius optio dolorum at, consequatur dignissimos cupiditate delectus!</p>
         </header>
         
-        <main class="main">
-            <div class="main__contenedor">
-                <h2 class="main__titulo">HTML</h2>
-                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nesciunt?</p>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="main__contenedor">
-                <h2 class="main__titulo">CSS</h2>
-                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nostrum?</p>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+        
+                <div class="container">
+                  <div class="carousel-caption text-start">
+                    <h1 class="carousel__h1">HTML</h1>
+                    <p class="carousel__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nesciunt?</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+        
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1 class="carousel__h1">CSS</h1>
+                    <p class="carousel__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nostrum?</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+        
+                <div class="container">
+                  <div class="carousel-caption text-end">
+                    <h1 class="carousel__h1">JAVASCRIPT</h1>
+                    <p class="carousel__text">In process.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="main__contenedor">
-                <h2 class="main__titulo">JAVASCRIPT</h2>
-                <p class="texto">En Proceso</p>
-            </div>
-            
-        </main>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
-        <footer class="footer">
+        <footer class="footer row">
             <ul class="footer__list">
                 <li class="footer__link"> <a class="anchor" href="https://www.facebook.com/lucioenricci">Facebook</a> </li>
                 <li class="footer__link"> <a class="anchor" href="https://www.instagram.com/lucioenricci/">Instagram</a> </li>
@@ -48,6 +82,7 @@
             </ul>
         </footer>
     </div>
+        
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
