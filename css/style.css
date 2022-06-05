@@ -131,6 +131,24 @@ nav .anchor:after {
     letter-spacing: 5px;
 }
 
+/*CONTACT*/
+
+.contact {
+    padding:1rem;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+}
+
+.h1-responsive {
+    color:#C49609;
+    font-family: 'Bebas Neue', cursive;
+    padding: 0.3rem;
+    font-size: 5.6rem;
+    font-weight: 900;
+    letter-spacing: 0.6rem;
+
+}
 
 
 

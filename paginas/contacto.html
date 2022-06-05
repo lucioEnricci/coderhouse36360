@@ -14,68 +14,60 @@
     <link rel="icon" href="../imagenes/favicon-32x32.png">
 </head>
 <body>
-    <div class="container__contact">
+    <div class="container-fluid index">
 
-        <header class="container__home">
-            <a class="anchor" href="../index.html"> HOME </a>
-        </header>
-    
-        
-        <div class="titulo">
-                    <h1 class="main__title">Contact me!</h1>
-        </div>
-        
-        <section class="contenedor__contact">
-            <form class="contact" action="" method="get">
-    
-                <div class="contact__item">
-                    <label for="username">Name: </label>
-                    <input type="text"id="username" name="username"> 
+        <nav class="row">
+            <div class="col-12 text-center text-md-end ">
+                <a class="nav__home" href="../index.html"> HOME </a>
+            </div>
+        </nav>
+
+        <section class="mb-4 row contact" >
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+            <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
+            <div class="row">
+                <div class="col-md-9 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control">
+                                    <label for="name" class="">Your name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control">
+                                    <label for="email" class="">Your email</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                    <label for="subject" class="">Subject</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                    <label for="message">Your message</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-primary">Send</a>
+                    </div>
+                    <div class="status"></div>
                 </div>
-        
-                <div class="contact__item">
-                    <label for="lastname">Last name: </label>
-                    <input type="text"id="lastname" name="lastname"> 
-                </div>
-        
-                <div class="contact__item">
-                    <label for="email">Email: </label>
-                    <input type="email" id="email" name="email" required placeholder="required*">
-                </div>
-        
-                <div class="contact__item">
-                    <label for="coments">Coments: </label>
-                    <textarea name="coments" id="coments" cols="30" rows="3"></textarea>
-                </div>
-        
-                <div class="contact__item">
-                    <label for="contact">How do you find me?</label>
-                    <select name ="contacto" id="contact" >
-                        <option value="Instagram">Instagram</option>
-                        <option value="Facebook">Facebook</option>
-                        <option value="Amigo">Friend</option>
-                        <option value="GitHub">GitHub</option>
-                    </select>
-                </div>
-        
-                <div class="contact__item--inline">
-                    <label for="si">Newsletters</label>
-                    <input type="checkbox" id="si" name="aceptar">
-                </div>
-                
-                <button class="btn" type="submit">Send</button>
-            </form>
-    
-            <div class="mapa">
-                <img src="../imagenes/pngkey.com-icono-de-telefono-png-944198.png" width="50px" alt="">
-                <p>Adress: Calle Falsa 123</p>
-                <img src="../imagenes/pngkey.com-phone-icon-png-transparent-829521.png" width="50px" alt="">
-                <p>Phone: +3030303030</p>
-                <img class="imagen" src="../imagenes/contact.png" alt="deadpool">
             </div>
         </section>
 
-        <footer class="footer">
+        <footer class="footer row">
             <ul class="footer__list">
                 <li class="footer__link"> <a class="anchor" href="https://www.facebook.com/lucioenricci">Facebook</a> </li>
                 <li class="footer__link"> <a class="anchor" href="https://www.instagram.com/lucioenricci/">Instagram</a> </li>
