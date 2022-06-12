@@ -1,0 +1,41 @@
+.main__t {
+    display:flex;
+    flex-direction: column;
+        &__contenedor {
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items: center;
+        }
+        &__titulo {
+            color:#C49609;
+        }
+        &__texto {
+            padding:1rem;
+            font-family: 'Kanit', sans-serif;
+            font-size: 2rem;
+            letter-spacing: 5px;
+        }
+}
+
+.main {
+    &__contenedor {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+    }
+    &__t {
+        display:flex;
+        flex-direction: column;
+    }
+    &__titulo {
+        color:#C49609;
+    }
+    &__texto {
+        padding:1rem;
+        font-family: 'Kanit', sans-serif;
+        font-size: 2rem;
+        letter-spacing: 5px;
+    }
+}

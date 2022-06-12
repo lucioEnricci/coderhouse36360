@@ -1,0 +1,39 @@
+.nav__home {
+    align-items:center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+    padding:20px;
+    color:#a21f30;
+    text-decoration: none;
+        &:hover {
+            color:#C49609;
+        }
+}
+
+.header {
+    &__title {
+        color:#C49609;
+    font-family: 'Bebas Neue', cursive;
+    padding: 0.3rem;
+    font-size: 4em; 
+    font-weight: 900;
+    letter-spacing: 0.6rem;
+    }
+    &__text {
+        font-family: 'Kanit', sans-serif;
+            font-size: 2em;
+            letter-spacing: 5px;
+    }
+}
+
+.carousel__h1 {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    color:#a21f30;
+}
+
+.card {
+    background-color: #000;
+    margin:auto;
+}
