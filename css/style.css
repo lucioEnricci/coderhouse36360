@@ -1,4 +1,10 @@
 /*HOME*/
+body {
+    background-color:black;
+}
+
+
+
 .index {
     background-color:black;
     color:whitesmoke;
@@ -11,8 +17,8 @@
     align-items:center;
     color:whitesmoke;
     font-family: 'Bebas Neue', cursive;
-    font-size: 3.1rem;
-    letter-spacing: 0.6rem;
+    font-size: 3em;
+    letter-spacing: 0.3em;
 }
 
 .nav {
@@ -26,7 +32,16 @@
     list-style-type: none;
     font-family: 'Bebas Neue', cursive;
     padding: 0.3rem;
-    font-size: 5.6rem;
+    
+}
+
+.nav__anchor {
+    text-decoration: none;
+    color:#C49609;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 6em;
     font-weight: 900;
     letter-spacing: 0.6rem;
 }
@@ -39,7 +54,7 @@
     display: inline-block;
 }
 
-nav .anchor:after {
+.nav__anchor:after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -50,11 +65,11 @@ nav .anchor:after {
     transition: left .8s;
 }
 
-.anchor:hover:after {
+.nav__anchor:hover:after {
     left: 0;
 }
 
-.anchor:hover {
+.nav__anchor:hover {
     color:#a21f30;
 }
 
@@ -85,14 +100,14 @@ nav .anchor:after {
     color:#C49609;
     font-family: 'Bebas Neue', cursive;
     padding: 0.3rem;
-    font-size: 5.6rem;
+    font-size: 4em; 
     font-weight: 900;
     letter-spacing: 0.6rem;
 }
 
 .header__text {
     font-family: 'Kanit', sans-serif;
-    font-size: 2rem;
+    font-size: 2em;
     letter-spacing: 5px;
 }
 
