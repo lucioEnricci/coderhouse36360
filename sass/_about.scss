@@ -30,6 +30,10 @@
         flex-direction: column;
     }
     &__titulo {
+        padding:1rem;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 3rem;
+        letter-spacing: 5px;
         color:#C49609;
     }
     &__texto {

@@ -12,6 +12,7 @@
 }
 
 .header {
+    height:80vh;
     &__title {
         color:#C49609;
     font-family: 'Bebas Neue', cursive;
@@ -27,13 +28,27 @@
     }
 }
 
-.carousel__h1 {
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 3px;
-    color:#a21f30;
+.header-small {
+        &__title {
+            color:#C49609;
+        font-family: 'Bebas Neue', cursive;
+        padding: 0.3rem;
+        font-size: 4em; 
+        font-weight: 900;
+        letter-spacing: 0.6rem;
+        }
+        &__text {
+            font-family: 'Kanit', sans-serif;
+                font-size: 2em;
+                letter-spacing: 5px;
+        }
 }
 
 .card {
     background-color: #000;
     margin:auto;
+}
+
+.card-img-top{
+    background-color: whitesmoke;
 }
