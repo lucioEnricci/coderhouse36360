@@ -9,10 +9,19 @@
       list-style-type: none;
       padding:  0px 15px;
 
-      a {
+      .anchor {
          color:whitesmoke;
       }
    }
  }
  
+ .mailto {
+   list-style-type: none;
+   color:whitesmoke;
+   text-decoration: none;
+   &:hover {
+      color:whitesmoke;
+   }
+ }
+
  

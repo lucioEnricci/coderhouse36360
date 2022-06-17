@@ -12,9 +12,6 @@
     }
 }
 
-
-
-
 .nav {
     display:flex;
     justify-content:center;
@@ -66,4 +63,24 @@
     display:flex;
     justify-content:center;
     overflow:hidden;
+}
+
+.aboutmeindex {
+    height: 60vh;
+    background-color: rgb(42, 42, 42);
+    &__h2 {
+        color:whitesmoke;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 2em;
+        letter-spacing: 0.3em;
+        margin-top:40px;
+        padding-left:30px;
+    }
+    &__text {
+        padding:1rem;
+        font-family: 'Kanit', sans-serif;
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+    }
+
 }
