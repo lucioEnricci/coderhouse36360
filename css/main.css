@@ -30,8 +30,15 @@ body {
     align-items: center;
     color: whitesmoke;
     font-family: 'Bebas Neue', cursive;
-    font-size: 3em;
-    letter-spacing: 0.3em; }
+    font-size: 3rem;
+    letter-spacing: 0.3rem; }
+
+.anchor, .nav__anchor {
+  text-decoration: none;
+  color: #C49609;
+  position: relative;
+  overflow: hidden;
+  display: inline-block; }
 
 .nav {
   display: flex;
@@ -43,12 +50,7 @@ body {
     font-family: 'Bebas Neue', cursive;
     padding: 0.3rem; }
   .nav__anchor {
-    text-decoration: none;
-    color: #c49609;
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-    font-size: 6em;
+    font-size: 6rem;
     font-weight: 900;
     letter-spacing: 0.6rem; }
   .nav__anchor:after {
@@ -64,13 +66,6 @@ body {
     left: 0; }
   .nav__anchor:hover {
     color: #a21f30; }
-
-.anchor {
-  text-decoration: none;
-  color: #C49609;
-  position: relative;
-  overflow: hidden;
-  display: inline-block; }
 
 .imagen {
   grid-area: imagen;
@@ -111,26 +106,13 @@ body {
   color: #C49609;
   font-family: 'Bebas Neue', cursive;
   padding: 0.3rem;
-  font-size: 4em;
+  font-size: 4rem;
   font-weight: 900;
   letter-spacing: 0.6rem; }
 
 .header__text {
   font-family: 'Kanit', sans-serif;
-  font-size: 2em;
-  letter-spacing: 5px; }
-
-.header-small__title {
-  color: #C49609;
-  font-family: 'Bebas Neue', cursive;
-  padding: 0.3rem;
-  font-size: 4em;
-  font-weight: 900;
-  letter-spacing: 0.6rem; }
-
-.header-small__text {
-  font-family: 'Kanit', sans-serif;
-  font-size: 2em;
+  font-size: 2rem;
   letter-spacing: 5px; }
 
 .card {
@@ -153,9 +135,9 @@ body {
 
 .main__contenedor {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center; }
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
 
 .main__h2title {
   padding: 1rem;
@@ -193,11 +175,10 @@ body {
     display: inline;
     font-family: 'Kanit', sans-serif;
     list-style-type: none;
-    padding: 0px 15px;
-    /* aca puedo aplicar el extend*/ }
-    .footer__list .footer__link .anchor {
+    padding: 0px 15px; }
+    .footer__list .footer__link .anchor, .footer__list .footer__link .nav__anchor {
       color: whitesmoke; }
-      .footer__list .footer__link .anchor:hover {
+      .footer__list .footer__link .anchor:hover, .footer__list .footer__link .nav__anchor:hover {
         color: #4ca3f3; }
 
 .mailto {
@@ -221,18 +202,12 @@ body {
     .grillado__imagen:hover {
       filter: grayscale(0%); }
 
-/*puedo aplicar extend por aqui*/
-.vertical {
+.vertical, .cuadrada {
   grid-row: span 2; }
 
-.cuadrada {
-  grid-column: span 2;
-  grid-row: span 2; }
-
-.horizontal {
+.horizontal, .cuadrada {
   grid-column: span 2; }
 
-/*extend extend extend*/
 @media screen and (max-width: 320px) {
   .grillado {
     grid-template-columns: 1fr; } }

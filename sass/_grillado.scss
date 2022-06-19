@@ -15,20 +15,19 @@
     }
   }
  
-  /*puedo aplicar extend por aqui*/
   .vertical{
     grid-row: span 2; 
   }
   
-  .cuadrada {
-    grid-column: span 2; 
-    grid-row: span 2; 
-  }
   
   .horizontal{
     grid-column: span 2; 
   }
-  /*extend extend extend*/
+
+  .cuadrada {
+    @extend .vertical; 
+    @extend .horizontal; 
+  }
   
 
   @media screen and (max-width: 320px){

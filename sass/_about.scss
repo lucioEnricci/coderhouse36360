@@ -1,9 +1,6 @@
 .main {
     &__contenedor {
-        display:flex;
-        flex-direction:column;
-        justify-content:space-around;
-        align-items: center;
+        @include flex-center-center-column;
     }
     &__h2title {
         padding:1rem;
