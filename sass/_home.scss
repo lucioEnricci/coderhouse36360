@@ -56,9 +56,14 @@
     display:flex;
     justify-content:center;
     overflow:hidden;
-    filter: blur(2px);
-    &:hover {
-        filter:blur(0);
+}
+
+@media (min-width: 62rem){
+    .imagen {
+        filter: blur(3px);
+        &:hover {
+            filter:blur(0);
+        }
     }
 }
 

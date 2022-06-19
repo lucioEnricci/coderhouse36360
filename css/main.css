@@ -71,10 +71,13 @@ body {
   grid-area: imagen;
   display: flex;
   justify-content: center;
-  overflow: hidden;
-  filter: blur(2px); }
-  .imagen:hover {
-    filter: blur(0); }
+  overflow: hidden; }
+
+@media (min-width: 62rem) {
+  .imagen {
+    filter: blur(3px); }
+    .imagen:hover {
+      filter: blur(0); } }
 
 .aboutmeindex {
   background-color: #2a2a2a; }
