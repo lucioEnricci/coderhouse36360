@@ -19,14 +19,6 @@
     display: inline-block;
 }
 
-@mixin flex-center-center-column {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-}
-
-
 .nav {
     @include flex-center-center-column;
         &__list {
