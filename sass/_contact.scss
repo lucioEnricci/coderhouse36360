@@ -6,11 +6,8 @@
     letter-spacing: 5px;
 }
 
-
-
-
 .h1-responsive {
-    color:#C49609;
+    color:map-get($colores, oro);
     font-family: 'Bebas Neue', cursive;
     padding: 0.3rem;
     font-size: 5.6rem;

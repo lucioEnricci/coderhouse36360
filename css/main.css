@@ -1,3 +1,24 @@
+texto {
+  color: whitesmoke; }
+
+oro {
+  color: #C49609; }
+
+bordo {
+  color: #a21f30; }
+
+blanco {
+  color: white; }
+
+fondo-gris {
+  color: #2a2a2a; }
+
+fondo-negro {
+  color: black; }
+
+hover {
+  color: #4ca3f3; }
+
 body {
   background-color: black; }
 
@@ -55,7 +76,10 @@ body {
   grid-area: imagen;
   display: flex;
   justify-content: center;
-  overflow: hidden; }
+  overflow: hidden;
+  filter: blur(2px); }
+  .imagen:hover {
+    filter: blur(0); }
 
 .aboutmeindex {
   background-color: #2a2a2a; }
@@ -110,8 +134,10 @@ body {
   letter-spacing: 5px; }
 
 .card {
-  background-color: #000;
+  background-color: black;
   margin: auto; }
+  .card:hover {
+    color: #4ca3f3; }
 
 .card-img-top {
   background-color: black; }
@@ -122,9 +148,8 @@ body {
 .acoderhouse {
   text-decoration: none;
   color: whitesmoke; }
-
-.acoderhouse:hover {
-  color: #a21f30; }
+  .acoderhouse:hover {
+    color: #4ca3f3; }
 
 .main__contenedor {
   display: flex;
@@ -168,16 +193,19 @@ body {
     display: inline;
     font-family: 'Kanit', sans-serif;
     list-style-type: none;
-    padding: 0px 15px; }
+    padding: 0px 15px;
+    /* aca puedo aplicar el extend*/ }
     .footer__list .footer__link .anchor {
       color: whitesmoke; }
+      .footer__list .footer__link .anchor:hover {
+        color: #4ca3f3; }
 
 .mailto {
   list-style-type: none;
   color: whitesmoke;
   text-decoration: none; }
   .mailto:hover {
-    color: whitesmoke; }
+    color: #4ca3f3; }
 
 .grillado {
   display: grid;
@@ -185,12 +213,15 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-template-rows: auto;
   grid-auto-flow: dense; }
+  .grillado__imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%); }
+    .grillado__imagen:hover {
+      filter: grayscale(0%); }
 
-.grillado > div > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
-
+/*puedo aplicar extend por aqui*/
 .vertical {
   grid-row: span 2; }
 
@@ -201,6 +232,7 @@ body {
 .horizontal {
   grid-column: span 2; }
 
+/*extend extend extend*/
 @media screen and (max-width: 320px) {
   .grillado {
     grid-template-columns: 1fr; } }

@@ -1,5 +1,16 @@
-$color-texto: whitesmoke;
-$color-oro: #C49609;
-$color-bordo: #a21f30;
-$color-fondo-gris:rgb(42, 42, 42);
-$color-fondo-negro:black;
+$colores:(
+    "texto": whitesmoke,
+    "oro": #C49609,
+    "bordo": #a21f30,
+    "blanco":white,
+    "fondo-gris":rgb(42, 42, 42),
+    "fondo-negro":black,
+    "hover":#4ca3f3
+);
+
+@each $color, $value in $colores {
+    #{$color}{
+        color:#{$value};
+    }
+}
+

@@ -4,14 +4,18 @@
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
     grid-template-rows: auto; 
     grid-auto-flow: dense; 
+    &__imagen {
+      width: 100%; 
+      height: 100%; 
+      object-fit: cover; 
+      filter:grayscale(100%);
+      &:hover {
+        filter:grayscale(0%);
+      }
+    }
   }
-  
-  .grillado > div > img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-  }
-  
+ 
+  /*puedo aplicar extend por aqui*/
   .vertical{
     grid-row: span 2; 
   }
@@ -24,10 +28,13 @@
   .horizontal{
     grid-column: span 2; 
   }
+  /*extend extend extend*/
   
-  
+
   @media screen and (max-width: 320px){
     .grillado{
       grid-template-columns: 1fr; }
   }
+
+
   

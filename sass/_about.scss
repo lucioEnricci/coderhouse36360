@@ -10,13 +10,13 @@
         font-family: 'Bebas Neue', cursive;
         font-size: 3rem;
         letter-spacing: 5px;
-        color:#C49609;
+        color:map-get($colores, oro);
     }
     &__text {
         padding:1rem;
         font-family: 'Kanit', sans-serif;
         font-size: 2rem;
         letter-spacing: 5px;
-        color:whitesmoke;
+        color:map-get($colores, texto);
     }
 }

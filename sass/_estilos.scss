@@ -4,17 +4,16 @@
     font-size: 2.5rem;
     letter-spacing: 10px;
     padding:20px;
-    color:#a21f30;
+    color:map-get($colores, bordo);
     text-decoration: none;
         &:hover {
-            color:#C49609;
+            color:map-get($colores, oro);
         }
 }
 
 .header {
-    //height:80vh;
     &__title {
-        color:#C49609;
+        color:map-get($colores, oro);
     font-family: 'Bebas Neue', cursive;
     padding: 0.3rem;
     font-size: 4em; 
@@ -30,7 +29,7 @@
 
 .header-small {
         &__title {
-            color:#C49609;
+            color:map-get($colores, oro);
         font-family: 'Bebas Neue', cursive;
         padding: 0.3rem;
         font-size: 4em; 
@@ -45,23 +44,25 @@
 }
 
 .card {
-    background-color: #000;
+    background-color:map-get($colores, fondo-negro);
     margin:auto;
+    &:hover {
+        color:map-get($colores, hover);
+    }
 }
 
 .card-img-top{
-    background-color: black;
+    background-color:map-get($colores, fondo-negro);
 }
 
 .fondo-blanco {
-    background-color: white;
+    background-color:map-get($colores, blanco);
 }
 
 .acoderhouse {
     text-decoration: none;
-    color:whitesmoke;
-}
-
-.acoderhouse:hover {
-    color:#a21f30;
+    color:map-get($colores, texto);
+    &:hover {
+        color:map-get($colores, hover);
+    }
 }

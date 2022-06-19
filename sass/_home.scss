@@ -63,13 +63,16 @@
     display:flex;
     justify-content:center;
     overflow:hidden;
+    filter: blur(2px);
+    &:hover {
+        filter:blur(0);
+    }
 }
 
 .aboutmeindex {
-    //height: 60vh;
-    background-color: rgb(42, 42, 42);
+    background-color:map-get($colores, fondo-gris);
     &__h2 {
-        color:whitesmoke;
+        color:map-get($colores, texto);
         font-family: 'Bebas Neue', cursive;
         font-size: 2rem;
         letter-spacing: 0.3em;

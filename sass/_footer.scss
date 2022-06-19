@@ -8,19 +8,22 @@
       font-family: 'Kanit', sans-serif;
       list-style-type: none;
       padding:  0px 15px;
-
+/* aca puedo aplicar el extend*/
       .anchor {
-         color:whitesmoke;
+         color:map-get($colores, texto);
+         &:hover {
+            color:map-get($colores, hover);
+         }
       }
    }
  }
  
  .mailto {
    list-style-type: none;
-   color:whitesmoke;
+   color:map-get($colores, texto);
    text-decoration: none;
    &:hover {
-      color:whitesmoke;
+      color:map-get($colores, hover);
    }
  }
 
