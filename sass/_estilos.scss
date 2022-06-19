@@ -12,7 +12,7 @@
 }
 
 .header {
-    height:80vh;
+    //height:80vh;
     &__title {
         color:#C49609;
     font-family: 'Bebas Neue', cursive;
@@ -50,5 +50,18 @@
 }
 
 .card-img-top{
-    background-color: whitesmoke;
+    background-color: black;
+}
+
+.fondo-blanco {
+    background-color: white;
+}
+
+.acoderhouse {
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+.acoderhouse:hover {
+    color:#a21f30;
 }

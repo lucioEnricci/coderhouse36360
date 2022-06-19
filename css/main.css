@@ -1,7 +1,6 @@
 .index {
   background-color: black;
   color: whitesmoke;
-  height: 100%;
   width: 100%; }
   .index__h1 {
     align-items: center;
@@ -56,12 +55,11 @@
   overflow: hidden; }
 
 .aboutmeindex {
-  height: 60vh;
   background-color: #2a2a2a; }
   .aboutmeindex__h2 {
     color: whitesmoke;
     font-family: 'Bebas Neue', cursive;
-    font-size: 2em;
+    font-size: 2rem;
     letter-spacing: 0.3em;
     margin-top: 40px;
     padding-left: 30px; }
@@ -82,19 +80,18 @@
   .nav__home:hover {
     color: #C49609; }
 
-.header {
-  height: 80vh; }
-  .header__title {
-    color: #C49609;
-    font-family: 'Bebas Neue', cursive;
-    padding: 0.3rem;
-    font-size: 4em;
-    font-weight: 900;
-    letter-spacing: 0.6rem; }
-  .header__text {
-    font-family: 'Kanit', sans-serif;
-    font-size: 2em;
-    letter-spacing: 5px; }
+.header__title {
+  color: #C49609;
+  font-family: 'Bebas Neue', cursive;
+  padding: 0.3rem;
+  font-size: 4em;
+  font-weight: 900;
+  letter-spacing: 0.6rem; }
+
+.header__text {
+  font-family: 'Kanit', sans-serif;
+  font-size: 2em;
+  letter-spacing: 5px; }
 
 .header-small__title {
   color: #C49609;
@@ -114,7 +111,17 @@
   margin: auto; }
 
 .card-img-top {
-  background-color: whitesmoke; }
+  background-color: black; }
+
+.fondo-blanco {
+  background-color: white; }
+
+.acoderhouse {
+  text-decoration: none;
+  color: whitesmoke; }
+
+.acoderhouse:hover {
+  color: #a21f30; }
 
 .main__t {
   display: flex;
