@@ -15,7 +15,6 @@
     text-decoration: none;
     color:map-get($colores, oro);
     position: relative;
-    overflow: hidden;
     display: inline-block;
 }
 
@@ -28,7 +27,8 @@
         }
         &__anchor {
             @extend .anchor;
-            font-size: 6rem;
+            font-size: 4rem;
+            overflow: hidden;
             font-weight: 900;
             letter-spacing: 0.6rem;
         }
@@ -50,20 +50,27 @@
         }
 }
 
-
-.imagen {
-    grid-area:imagen;
+.cont {
     display:flex;
     justify-content:center;
     overflow:hidden;
+    &__imagen {
+        width:35rem;
+    }
 }
 
 @media (min-width: 62rem){
-    .imagen {
+    .cont {
         filter: blur(3px);
         &:hover {
             filter:blur(0);
         }
+    }
+    .nav__anchor {
+        font-size: 6rem;
+    }
+    .cont__imagen {
+        width:50rem;
     }
 }
 

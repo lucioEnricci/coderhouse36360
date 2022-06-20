@@ -37,7 +37,6 @@ body {
   text-decoration: none;
   color: #C49609;
   position: relative;
-  overflow: hidden;
   display: inline-block; }
 
 .nav {
@@ -50,7 +49,8 @@ body {
     font-family: 'Bebas Neue', cursive;
     padding: 0.3rem; }
   .nav__anchor {
-    font-size: 6rem;
+    font-size: 4rem;
+    overflow: hidden;
     font-weight: 900;
     letter-spacing: 0.6rem; }
   .nav__anchor:after {
@@ -67,17 +67,22 @@ body {
   .nav__anchor:hover {
     color: #a21f30; }
 
-.imagen {
-  grid-area: imagen;
+.cont {
   display: flex;
   justify-content: center;
   overflow: hidden; }
+  .cont__imagen {
+    width: 35rem; }
 
 @media (min-width: 62rem) {
-  .imagen {
+  .cont {
     filter: blur(3px); }
-    .imagen:hover {
-      filter: blur(0); } }
+    .cont:hover {
+      filter: blur(0); }
+  .nav__anchor {
+    font-size: 6rem; }
+  .cont__imagen {
+    width: 50rem; } }
 
 .aboutmeindex {
   background-color: #2a2a2a; }
@@ -183,6 +188,15 @@ body {
       color: whitesmoke; }
       .footer__list .footer__link .anchor:hover, .footer__list .footer__link .nav__anchor:hover {
         color: #4ca3f3; }
+
+@media (max-width: 48rem) {
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .footer__list .footer__link {
+      margin: 1rem 0; } }
 
 .mailto {
   list-style-type: none;

@@ -16,6 +16,18 @@
       }
    }
  }
+
+ @media (max-width: 48rem){
+   .footer__list {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .footer__link {
+         margin:1rem 0;
+      }
+   }
+ }
  
  .mailto {
    list-style-type: none;
