@@ -13,7 +13,7 @@
 
 .header {
     &__title {
-        color:map-get($colores, oro);
+    color:map-get($colores, oro);
     font-family: 'Bebas Neue', cursive;
     padding: 0.3rem;
     font-size: 4rem; 
@@ -22,17 +22,30 @@
     }
     &__text {
         font-family: 'Kanit', sans-serif;
-            font-size: 2rem;
+            font-size: 1rem;
             letter-spacing: 5px;
     }
 }
 
+
+
 .card {
     background-color:map-get($colores, fondo-negro);
     margin:auto;
+    width:8rem;
     &:hover {
         color:map-get($colores, hover);
     }
+}
+
+@media (min-width: 62rem) {
+    .header__text {
+        font-size: 2rem;
+    }
+    .card {
+        width:16rem;
+    }
+
 }
 
 .card-img-top{

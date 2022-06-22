@@ -120,14 +120,21 @@ body {
 
 .header__text {
   font-family: 'Kanit', sans-serif;
-  font-size: 2rem;
+  font-size: 1rem;
   letter-spacing: 5px; }
 
 .card {
   background-color: black;
-  margin: auto; }
+  margin: auto;
+  width: 8rem; }
   .card:hover {
     color: #4ca3f3; }
+
+@media (min-width: 62rem) {
+  .header__text {
+    font-size: 2rem; }
+  .card {
+    width: 16rem; } }
 
 .card-img-top {
   background-color: black; }
