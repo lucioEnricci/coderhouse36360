@@ -89,15 +89,19 @@ body {
   .aboutmeindex__h2 {
     color: whitesmoke;
     font-family: 'Bebas Neue', cursive;
-    font-size: 2rem;
+    font-size: 1rem;
     letter-spacing: 0.3em;
     margin-top: 40px;
     padding-left: 30px; }
   .aboutmeindex__text {
     padding: 1rem;
     font-family: 'Kanit', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     letter-spacing: 5px; }
+
+@media (min-width: 62rem) {
+  .aboutmeindex__text {
+    font-size: 1.5rem; } }
 
 .nav__home {
   align-items: center;
@@ -114,7 +118,7 @@ body {
   color: #C49609;
   font-family: 'Bebas Neue', cursive;
   padding: 0.3rem;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 900;
   letter-spacing: 0.6rem; }
 
@@ -122,6 +126,10 @@ body {
   font-family: 'Kanit', sans-serif;
   font-size: 1rem;
   letter-spacing: 5px; }
+
+@media (min-width: 62rem) {
+  .header__title {
+    font-size: 4rem; } }
 
 .card {
   background-color: black;
@@ -164,23 +172,33 @@ body {
 .main__text {
   padding: 1rem;
   font-family: 'Kanit', sans-serif;
-  font-size: 2rem;
+  font-size: 1rem;
   letter-spacing: 5px;
   color: whitesmoke; }
+
+@media (min-width: 62rem) {
+  .main__text {
+    font-size: 2rem; } }
 
 .contact {
   padding: 1rem;
   font-family: 'Kanit', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   letter-spacing: 5px; }
 
 .h1-responsive {
   color: #C49609;
   font-family: 'Bebas Neue', cursive;
   padding: 0.3rem;
-  font-size: 5.6rem;
+  font-size: 3rem;
   font-weight: 900;
   letter-spacing: 0.6rem; }
+
+@media (min-width: 62rem) {
+  .contact {
+    font-size: 1.5rem; }
+  .h1-responsive {
+    font-size: 4rem; } }
 
 .footer__list {
   display: flex;
